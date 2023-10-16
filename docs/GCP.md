@@ -1,4 +1,4 @@
-#GCP
+# GCP
 
 ## Getting Started with GCP Labs
 

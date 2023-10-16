@@ -12,7 +12,13 @@ nav:
       - "Azure Introduction": 'AZURE.md'
     - GCP:
       - "GCP Introduction": 'GCP.md'
+plugins:
+  - glightbox
+  - search
 theme:
+  icon:
+    admonition: 
+      note: octicons/tag-16
   name: material
   features:
     - navigation.tabs
@@ -29,6 +35,7 @@ theme:
     - navigation.expand
     - navigation.path
     - header.autohide
+    - navigation.footer
   language: en
   palette:
 # Palette toggle for light mode
@@ -69,3 +76,7 @@ markdown_extensions:
       alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
+
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/AMohamed0/CloudDocs/blob/main/LICENSE"  target="_blank" rel="noopener">AMohamed0</a>
