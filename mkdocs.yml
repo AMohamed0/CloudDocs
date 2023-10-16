@@ -1,0 +1,71 @@
+site_name: Cloud Documentation
+extra:
+  generator: false
+nav:
+  - Home:
+    - Introduction: 'index.md'
+  - Labs:
+    - AWS: 
+      - "AWS Introduction": 'AWS.md'
+      - "Lambda & S3": 'Lambda.md'
+    - Azure:
+      - "Azure Introduction": 'AZURE.md'
+    - GCP:
+      - "GCP Introduction": 'GCP.md'
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.expand
+    - navigation.path
+    - header.autohide
+  language: en
+  palette:
+# Palette toggle for light mode
+    - scheme: default
+      toggle: 
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: blue grey
+      accent: deep purple
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: blue grey
+      accent: deep purple
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
