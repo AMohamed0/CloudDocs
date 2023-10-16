@@ -336,9 +336,9 @@ To test your Lambda function with a dummy event (console)
 
 ??? note "Clean up your resources"
 
-    You can now delete the resources that you created for this tutorial, unless you want to retain them. By deleting AWS resources that you're no longer using, you prevent      unnecessary charges to your AWS account.
+    You can now delete the resources that you created for this tutorial, unless you want to retain them. By deleting AWS resources that you're no longer using, you prevent    unnecessary charges to your AWS account.
 
-    To delete the Lambda function
+     To delete the Lambda function
 
     1. Open the [Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the Lambda console.
 
