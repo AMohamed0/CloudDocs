@@ -32,4 +32,4 @@ Before diving into the labs, ensure you have the following in place:
 
 We value your feedback! If you encounter issues, have questions, or want to share your insights, please contact us at [abubakrm99@gmail.com](https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new]).
 
-Let's start exploring the world of AWS through hands-on labs! Happy learning!
+Let us start exploring the world of AWS through hands-on labs! Happy learning!
