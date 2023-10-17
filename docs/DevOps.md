@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # DevOps Dynamo Project
 
 Welcome to the DevOps Dynamo Project Overview! In this document, I will provide a summary of a comprehensive DevOps project I have completed. This project encompasses various tools and practices to enhance the software development, deployment, and monitoring processes. If you would like to see the github repository. It is located here: [https://github.com/AMohamed0/DevopsProject](https://github.com/AMohamed0/DevopsProject)
