@@ -1,5 +1,8 @@
 site_name: Cloud Documentation
 extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/AMohamed0
   generator: false
 nav:
   - Home:
@@ -7,19 +10,24 @@ nav:
   - Labs:
     - AWS: 
       - "AWS Introduction": 'AWS.md'
-      - "Lambda & S3": 'Lambda.md'
+      - "Resizing-Image": 'Lambda.md'
     - Azure:
       - "Azure Introduction": 'AZURE.md'
     - GCP:
       - "GCP Introduction": 'GCP.md'
+  - Projects:
+      - "devops": 'DevOps.md'
 plugins:
   - glightbox
   - search
+repo_url: https://github.com/AMohamed0
 theme:
   icon:
+    repo: fontawesome/brands/github
     admonition: 
       note: octicons/tag-16
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -76,6 +84,7 @@ markdown_extensions:
       alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
+
 
 
 copyright: |
