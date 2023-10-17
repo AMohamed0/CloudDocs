@@ -1,4 +1,4 @@
-# AZURE
+# Azure
 
 ## Getting Started with Azure Labs
 
