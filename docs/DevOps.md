@@ -81,4 +81,3 @@ The primary objective of this project was to establish a robust DevOps pipeline 
 ## Conclusion
 
 This DevOps project encompasses an array of tools and technologies to automate and streamline development, deployment, and monitoring. The integration of Jenkins, Terraform, Ansible, SonarQube, JFrog Artifactory, Kubernetes, Prometheus, and Grafana has resulted in a powerful and scalable DevOps pipeline.
-
