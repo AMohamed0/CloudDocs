@@ -1,2 +1,4 @@
 # CloudDocs
-This is a repository where I will host all of my labs for cloud/devops. 
+All of my labs/projects are hosted on the website below.
+
+![CloudDocs](https://amohamed0.github.io/CloudDocs/)
