@@ -13,6 +13,7 @@ nav:
       - "Resizing-Image": 'Lambda.md'
     - Azure:
       - "Azure Introduction": 'AZURE.md'
+      - "Load Balancer": 'azurelb.md'
     - GCP:
       - "GCP Introduction": 'GCP.md'
   - Projects:
