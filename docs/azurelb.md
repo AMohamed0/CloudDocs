@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Deploying Websites with Azure Load Balancer
 
 ## Step 1: Create a Resource Group
@@ -201,10 +205,10 @@ rm /tmp/metadata.json
 1. Click the "Review + create" button and then "Create" to create the VMSS.
     - copy the public IP address of the VMSS and add http:// to the beginning and paste it into a new tab. your new website should be live.
 
-![azlb.gif](https://im.ezgif.com/tmp/ezgif-1-d29a91d141.gif)
+![azlb.mp4](https://raw.githubusercontent.com/AMohamed0/CloudDocs/main/screenshots/azurelbsc/azlb.gif)
 
 ## Congratulations! 🎉
 
-You've successfully completed the VMSS lab!
+You've successfully completed the lab!
 
 ![Congratulations Image](https://www.icegif.com/wp-content/uploads/2023/05/icegif-1098.gif)
