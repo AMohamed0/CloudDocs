@@ -184,7 +184,7 @@ zip lambda_function.zip lambda_function.py
 
 In Windows, use your preferred zip tool to create the lambda_function.zip file. Make sure that your lambda_function.py file and the folders containing your dependencies are all at the root of the .zip file.
 
-![zipf.gif](https://raw.githubusercontent.com/AMohamed0/CloudDocs/main/zipf.gif)
+![zipf.gif](https://raw.githubusercontent.com/AMohamed0/CloudDocs/main/screenshots/zipf.gif)
 
 ### 5. Create the Lambda function
 
