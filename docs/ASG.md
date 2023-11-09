@@ -786,7 +786,7 @@ resource "aws_wafv2_web_acl_association" "WafWebAclAssociation" {
 
     4. terraform destroy
 
-![zipf.gif](https://raw.githubusercontent.com/AMohamed0/CloudDocs/main/screenshots/zipf.gif)
+![2023-11-08 23-25-20.gif](https://raw.githubusercontent.com/AMohamed0/CloudDocs/main/screenshots/2023-11-08%2023-25-20.gif)
 
 ## Conclusion
 
