@@ -1,4 +1,4 @@
-# CloudDocs
+# **CloudDocs**
 
 Welcome to my cloud and DevOps project website, where all my labs and projects come together under one roof.
 

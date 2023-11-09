@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Deploying Website with Azure Load Balancer
+# **Deploying Website with Azure Load Balancer**
 
 ## Step 1: Create a Resource Group
 
