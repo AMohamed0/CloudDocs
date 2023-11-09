@@ -718,7 +718,7 @@ resource "aws_wafv2_web_acl" "WafWebAcl" {
 
   rule {
     name     = "AWS-AWSManagedRulesWindowsRuleSet"
-    priority = 1
+    priority = 10
     override_action {
       none {}
     }
@@ -737,7 +737,7 @@ resource "aws_wafv2_web_acl" "WafWebAcl" {
 
   rule {
     name     = "AWS-AWSManagedRulesKnownBadInputsRuleSet"
-    priority = 1
+    priority = 20
     override_action {
       none {}
     }
