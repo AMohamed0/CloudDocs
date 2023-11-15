@@ -22,7 +22,7 @@ Define your AWS provider with the desired region and specify the required provid
 
 ``` hcl
 provider "aws" {
-  region = "ap-northeast-2"
+  region = "us-east-1"
 }
 
 terraform {
@@ -59,42 +59,42 @@ Create subnets within your VPC. Subnets can be public or private and are typical
 ``` hcl
 #These are   for  public
 
-resource "aws_subnet" "public-ap-northeast-2a" {
+resource "aws_subnet" "public-us-east-1a" {
   vpc_id                  = aws_vpc.app1.id
   cidr_block              = "10.74.1.0/24"
-  availability_zone       = "ap-northeast-2a"
+  availability_zone       = "us-east-1"
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "public-ca-central-1a"
+    Name = "public-us-east-1a"
     Service = "application1"
     Owner = "Chewbacca"
     Planet = "Musafar"
   }
 }
 
-resource "aws_subnet" "public-ap-northeast-2d" {
+resource "aws_subnet" "public-us-east-1d" {
   vpc_id                  = aws_vpc.app1.id
   cidr_block              = "10.74.4.0/24"
-  availability_zone       = "ap-northeast-2d"
+  availability_zone       = "us-east-1d"
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "public-ca-central-1b"
+    Name = "public-us-east-1d"
     Service = "application1"
     Owner = "Chewbacca"
     Planet = "Musafar"
   }
 }
 
-resource "aws_subnet" "public-ap-northeast-2c" {
+resource "aws_subnet" "public-us-east-1c" {
   vpc_id                  = aws_vpc.app1.id
   cidr_block              = "10.74.3.0/24"
-  availability_zone       = "ap-northeast-2c"
+  availability_zone       = "us-east-1c"
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "public-ca-central-1c"
+    Name = "public-us-east-1c"
     Service = "application1"
     Owner = "Chewbacca"
     Planet = "Musafar"
@@ -104,45 +104,44 @@ resource "aws_subnet" "public-ap-northeast-2c" {
 
 
 #these are for private
-resource "aws_subnet" "private-ap-northeast-2a" {
+resource "aws_subnet" "private-us-east-1a" {
   vpc_id            = aws_vpc.app1.id
   cidr_block        = "10.74.11.0/24"
-  availability_zone = "ap-northeast-2a"
+  availability_zone = "us-east-1"
 
   tags = {
-    Name = "private-ca-central-1a"
+    Name = "private-us-east-1a"
     Service = "application1"
     Owner = "Chewbacca"
     Planet = "Musafar"
   }
 }
 
-resource "aws_subnet" "private-ap-northeast-2d" {
+resource "aws_subnet" "private-us-east-1d" {
   vpc_id            = aws_vpc.app1.id
   cidr_block        = "10.74.14.0/24"
-  availability_zone = "ap-northeast-2d"
+  availability_zone = "us-east-1d"
 
   tags = {
-    Name = "private-ca-central-1b"
+    Name = "private-us-east-1d"
     Service = "application1"
     Owner = "Chewbacca"
     Planet = "Musafar"
   }
 }
 
-resource "aws_subnet" "private-ap-northeast-2c" {
+resource "aws_subnet" "private-us-east-1c" {
   vpc_id            = aws_vpc.app1.id
   cidr_block        = "10.74.13.0/24"
-  availability_zone = "ap-northeast-2c"
+  availability_zone = "us-east-1c"
 
   tags = {
-    Name = "private-ca-central-1d"
+    Name = "private-us-east-1d"
     Service = "application1"
     Owner = "Chewbacca"
     Planet = "Musafar"
   }
 }
-
 ```
 
 ## Step 4: Internet Gateway
@@ -245,33 +244,33 @@ resource "aws_route_table" "public" {
   }
 }
 
-resource "aws_route_table_association" "private-ap-northeast-2a" {
-  subnet_id      = aws_subnet.private-ap-northeast-2a.id
+resource "aws_route_table_association" "private-us-east-1a" {
+  subnet_id      = aws_subnet.private-us-east-1a.id
   route_table_id = aws_route_table.private.id
 }
 
-resource "aws_route_table_association" "private-ap-northeast-2d" {
-  subnet_id      = aws_subnet.private-ap-northeast-2d.id
+resource "aws_route_table_association" "private-us-east-1d" {
+  subnet_id      = aws_subnet.private-us-east-1d.id
   route_table_id = aws_route_table.private.id
 }
 
-resource "aws_route_table_association" "public-ap-northeast-2a" {
-  subnet_id      = aws_subnet.public-ap-northeast-2a.id
+resource "aws_route_table_association" "public-us-east-1a" {
+  subnet_id      = aws_subnet.public-us-east-1a.id
   route_table_id = aws_route_table.public.id
 }
 
-resource "aws_route_table_association" "public-ap-northeast-2d" {
-  subnet_id      = aws_subnet.public-ap-northeast-2d.id
+resource "aws_route_table_association" "public-us-east-1d" {
+  subnet_id      = aws_subnet.public-us-east-1d.id
   route_table_id = aws_route_table.public.id
 }
 
-resource "aws_route_table_association" "public-ap-northeast-2c" {
-  subnet_id      = aws_subnet.public-ap-northeast-2c.id
+resource "aws_route_table_association" "public-us-east-1c" {
+  subnet_id      = aws_subnet.public-us-east-1c.id
   route_table_id = aws_route_table.private.id
 }
 
-resource "aws_route_table_association" "private-ap-northeast-2c" {
-  subnet_id      = aws_subnet.private-ap-northeast-2c.id
+resource "aws_route_table_association" "private-us-east-1c" {
+  subnet_id      = aws_subnet.private-us-east-1c.id
   route_table_id = aws_route_table.private.id
 }
 
@@ -508,9 +507,9 @@ resource "aws_autoscaling_group" "app1_asg" {
   max_size              = 15
   desired_capacity      = 6
   vpc_zone_identifier   = [
-    aws_subnet.private-ap-northeast-2a.id,
-    aws_subnet.private-ap-northeast-2c.id,
-    aws_subnet.private-ap-northeast-2d.id,
+    aws_subnet.private-us-east-1a.id,
+    aws_subnet.private-us-east-1c.id,
+    aws_subnet.private-us-east-1d.id,
   ]
   health_check_type          = "ELB"
   health_check_grace_period  = 300
